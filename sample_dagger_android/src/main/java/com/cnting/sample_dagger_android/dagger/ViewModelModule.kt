@@ -16,12 +16,12 @@ abstract class ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(MainVM::class)
+    @com.cnting.base.dagger.ViewModelKey(MainVM::class)
     abstract fun mainViewModel(vm: MainVM): ViewModel
 
     @Binds
     @IntoMap
-    @ViewModelKey(SecondVM::class)
+    @com.cnting.base.dagger.ViewModelKey(SecondVM::class)
     abstract fun secondViewModel(vm: SecondVM): ViewModel
 
 }

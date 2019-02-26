@@ -8,8 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/base" />
             <option value="$PROJECT_DIR$/sample_dagger" />
             <option value="$PROJECT_DIR$/sample_dagger_android" />
+            <option value="$PROJECT_DIR$/sample_login" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

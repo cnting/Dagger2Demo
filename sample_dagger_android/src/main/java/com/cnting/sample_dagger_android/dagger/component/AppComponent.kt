@@ -6,6 +6,7 @@ import com.cnting.sample_dagger_android.dagger.ActivityModules
 import com.cnting.sample_dagger_android.dagger.AppModule
 import com.cnting.sample_dagger_android.dagger.CookModule
 import com.cnting.sample_dagger_android.dagger.ViewModelModule
+import com.cnting.sample_login.dagger.LoginModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -18,7 +19,8 @@ import javax.inject.Singleton
         ActivityModules::class,
         CookModule::class,
         AppModule::class,
-        ViewModelModule::class]
+        ViewModelModule::class,
+        LoginModule::class]   //其他模块的module直接整合到AppComponent
 )
 interface AppComponent : AndroidInjector<MyApplication> {
 

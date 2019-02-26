@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+//apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
@@ -9,7 +9,6 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.cnting.sample_dagger_android"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
@@ -46,4 +45,7 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-extensions:2.1.0-alpha02"
     implementation "com.google.code.gson:gson:2.8.5"
+
+    implementation project(':sample_login')
+    implementation project(':base')
 }

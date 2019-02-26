@@ -12,7 +12,7 @@ import com.cnting.sample_dagger_android.mvvm.ui.fragment.MainFragment
 import com.cnting.sample_dagger_android.mvvm.vm.MainVM
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : BaseActivity<MainVM>() {
+class MainActivity : com.cnting.base.BaseActivity<MainVM>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

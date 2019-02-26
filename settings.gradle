@@ -1,1 +1,1 @@
-include ':sample_dagger_android', ':sample_dagger'
+include ':sample_dagger_android', ':sample_dagger', ':sample_login', ':base'

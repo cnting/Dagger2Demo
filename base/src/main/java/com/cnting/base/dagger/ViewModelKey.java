@@ -1,4 +1,4 @@
-package com.cnting.sample_dagger_android.dagger;
+package com.cnting.base.dagger;
 
 import androidx.lifecycle.ViewModel;
 import dagger.MapKey;

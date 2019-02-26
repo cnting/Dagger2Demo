@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             .build()
             .inject(this)
 
-        Log.d("MainActivity", "===>student:$student")
+        Log.d("MainActivity", "===>student:${student.name}")
         Log.d("MainActivity", "===>gson:$gson")
     }
 }
