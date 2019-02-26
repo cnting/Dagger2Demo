@@ -1,1 +1,1 @@
-include ':app'
+include ':sample_dagger_android', ':sample_dagger'
