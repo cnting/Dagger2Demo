@@ -24,7 +24,6 @@ import javax.inject.Singleton
 )
 interface AppComponent : AndroidInjector<MyApplication> {
 
-
     @Component.Builder
     interface Builder {
         fun build(): AppComponent

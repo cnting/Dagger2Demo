@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.core.view.size
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cnting.sample_dagger_android.R
 import com.cnting.sample_dagger_android.mvvm.ui.adapter.MenuAdapter
