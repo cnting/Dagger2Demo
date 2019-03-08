@@ -1,4 +1,4 @@
-package com.cnting.sample_dagger_android.dagger
+package com.cnting.sample_dagger_android.dagger.module
 
 import androidx.lifecycle.ViewModel
 import com.cnting.sample_dagger_android.mvvm.vm.MainVM

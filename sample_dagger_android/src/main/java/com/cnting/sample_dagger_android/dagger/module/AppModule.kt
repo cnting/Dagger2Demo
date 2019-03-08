@@ -1,10 +1,12 @@
-package com.cnting.sample_dagger_android.dagger
+package com.cnting.sample_dagger_android.dagger.module
 
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.lifecycle.ViewModelProvider
-import com.cnting.sample_dagger_android.MyApplication
+import androidx.work.WorkerFactory
+import com.cnting.sample_dagger_android.dagger.ProjectViewModelFactory
+import com.cnting.sample_dagger_android.dagger.ProjectWorkerFactory
 import com.google.gson.Gson
 import dagger.Binds
 import dagger.Module
@@ -31,5 +33,9 @@ class AppModule() {
         @Singleton
         @Binds
         abstract fun provideViewModelFactory(factory: ProjectViewModelFactory): ViewModelProvider.Factory
+
+        @Singleton
+        @Binds
+        abstract fun providerWorkerFactory(factory: ProjectWorkerFactory): WorkerFactory
     }
 }

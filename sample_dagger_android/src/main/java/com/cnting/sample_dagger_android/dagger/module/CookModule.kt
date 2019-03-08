@@ -1,4 +1,4 @@
-package com.cnting.sample_dagger_android.dagger
+package com.cnting.sample_dagger_android.dagger.module
 
 import android.content.SharedPreferences
 import com.google.gson.Gson

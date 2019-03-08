@@ -1,4 +1,4 @@
-package com.cnting.sample_dagger_android.dagger
+package com.cnting.sample_dagger_android.dagger.module
 
 import com.cnting.sample_dagger_android.mvvm.ui.fragment.MainFragment
 import com.cnting.sample_dagger_android.mvvm.ui.fragment.MainFragment2

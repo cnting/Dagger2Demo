@@ -8,10 +8,13 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.WorkManager
 import com.cnting.sample_dagger_android.R
 import com.cnting.sample_dagger_android.mvvm.ui.adapter.MenuAdapter
 import com.cnting.sample_dagger_android.mvvm.ui.fragment.MainFragment
 import com.cnting.sample_dagger_android.mvvm.vm.MainVM
+import com.cnting.sample_dagger_android.worker.HelloWorldWorker
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : com.cnting.base.BaseActivity<MainVM>() {
@@ -32,6 +35,12 @@ class MainActivity : com.cnting.base.BaseActivity<MainVM>() {
             mainList.adapter?.notifyItemInserted(mainList.size)
         })
 
+        testWorkerManagerDagger()
+    }
+
+    private fun testWorkerManagerDagger() {
+        val request = OneTimeWorkRequestBuilder<HelloWorldWorker>().build()
+        WorkManager.getInstance().enqueue(request)
     }
 
     private fun initAdapter() {
